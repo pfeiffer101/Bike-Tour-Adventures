@@ -7,6 +7,7 @@ ruby '2.1.5'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for development and test
 gem 'sqlite3', group: [:development, :test]
+
 #Use postgres as the database in production
 gem 'pg', group: :production
 
