@@ -21,6 +21,7 @@
 			   <script src="https://checkout.stripe.com/checkout.js"></script>
 			   <%= hidden_field_tag 'stripeToken' %>
 			   <%= hidden_field_tag 'stripeEmail' %>
+			   <%= hidden_field_tag 'amount', 600000 %>
 			   <button id='btn-buy' type='button' class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</button>
 			   <script>
 			   	var handler = StripeCheckout.configure({
@@ -35,7 +36,7 @@
 		   		handler.open({
 		   			name: 'Bike Tour Adventures',
 		   			description: 'New Zealand',
-		   			amount: 600000
+		   			amount: document.getElementById("amount").value
 		   		});
 		   		e.preventDefault();
 		   		})
