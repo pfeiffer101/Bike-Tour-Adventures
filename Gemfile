@@ -23,6 +23,9 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Figaro gem for securely managing credentials
 gem 'figaro'
 
+# Add Letter opener for handling emails in development
+gem 'letter_opener', group: :development
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
